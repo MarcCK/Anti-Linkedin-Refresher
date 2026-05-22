@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn Anti Refresh",
+  "version": "1.0",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "root@bundesnachrichtendienst.org",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  },
+  "description": "Verhindert, dass LinkedIn den Feed beim Tab-Wechsel neu lädt.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.linkedin.com/*"],
+      "js": ["script.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "icons": {
+    "48": "icons/alr48.svg",
+    "96": "icons/alr96.svg"
+  }
+}
