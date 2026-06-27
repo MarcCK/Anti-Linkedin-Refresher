@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "LinkedIn Anti Refresh",
-  "version": "1.0",
+  "version": "1.1",
   "browser_specific_settings": {
     "gecko": {
       "id": "xxx",
@@ -20,7 +20,8 @@
     }
   ],
   "icons": {
-    "48": "icons/alr48.svg",
-    "96": "icons/alr96.svg"
+    "16": "icons/alr16.png",
+    "96": "icons/alr96.png",
+    "32": "icons/alr32.png"
   }
 }
